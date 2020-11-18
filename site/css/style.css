@@ -1,0 +1,78 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+p {
+  font-size: 1.1rem;
+}
+
+/* //////////////////// */
+#header {
+  text-align: center;
+  margin: 50px;
+}
+.section {
+  width: 100%;
+}
+
+.content {
+  background-color: gray;
+  border: 1px solid black;
+  position: relative;
+  margin: 15px;
+}
+/* paragraph style */
+.parg-content {
+  color: black;
+  width: 90%;
+  padding: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* title style: chicken,beef,sushi */
+.title {
+  border: 1px solid black;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 0;
+  width: 30%;
+}
+.chicken-title-color {
+  background-color: pink;
+  color: rgb(114, 114, 92);
+}
+
+.beef-title-color {
+  background-color: rgb(250, 9, 49);
+  color: white;
+}
+
+.sushi-title-color {
+  background-color: rgb(250, 226, 9);
+}
+
+/* desktop view */
+@media (min-width: 992px) {
+  .col-lg {
+    width: 33%;
+    float: left;
+  }
+}
+
+/* tablet view */
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md {
+    width: 50%;
+    float: left;
+  }
+  .col-md-fix {
+    float: left;
+  }
+}
