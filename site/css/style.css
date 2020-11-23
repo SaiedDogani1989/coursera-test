@@ -11,12 +11,11 @@ h1 {
   background-color: khaki;
 }
 /* //////////////////// */
-#header {
-  text-align: center;
-  margin: 50px;
-}
 .section {
   width: 100%;
+}
+.nav-tab {
+  display: none;
 }
 
 .content {
@@ -24,12 +23,15 @@ h1 {
   border: 1px solid black;
   position: relative;
   margin: 15px;
+  height: 1000px;
+  overflow-y: auto;
 }
 /* paragraph style */
 .parg-content {
   color: black;
   width: 90%;
   padding: 15px;
+  margin-top: 30px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -59,22 +61,8 @@ h1 {
 .sushi-title-color {
   background-color: rgb(250, 226, 9);
 }
-
-/* desktop view */
-@media (min-width: 992px) {
-  .col-lg {
-    width: 33%;
-    float: left;
-  }
-}
-
-/* tablet view */
-@media (min-width: 768px) and (max-width: 991px) {
-  .col-md {
-    width: 50%;
-    float: left;
-  }
-  .col-md-fix {
-    float: left;
+@media (max-width: 680px) {
+  .nav-tab {
+    display: block;
   }
 }
