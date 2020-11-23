@@ -10,6 +10,7 @@ p {
 h1 {
   background-color: khaki;
 }
+
 /* //////////////////// */
 .section {
   width: 100%;
@@ -19,12 +20,16 @@ h1 {
 }
 
 .content {
+  position: relative;
   background-color: gray;
   border: 1px solid black;
-  position: relative;
-  margin: 15px;
-  height: 1000px;
-  overflow-y: auto;
+  height: 1200px;
+  padding: 20px;
+}
+.content a {
+  color: white;
+  position: absolute;
+  bottom: 0;
 }
 /* paragraph style */
 .parg-content {
@@ -64,5 +69,22 @@ h1 {
 @media (max-width: 680px) {
   .nav-tab {
     display: block;
+  }
+  .navbar ul li a {
+    margin: 5px;
+    background-color: yellow;
+  }
+  .navbar-collapse {
+    border: 1px solid gray;
+    background-color: rgb(220, 213, 228);
+    font-size: 1.5rem;
+  }
+  .content {
+    background-color: gray;
+    border: 1px solid black;
+    width: 60%;
+    margin: auto;
+    height: 1200px;
+    padding: 20px;
   }
 }
